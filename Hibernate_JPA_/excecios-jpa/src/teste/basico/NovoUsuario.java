@@ -9,6 +9,7 @@ public class NovoUsuario {
 		
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("excecios-jpa");
 		EntityManager em = emf.createEntityManager();
+		
 	}
 
 }
