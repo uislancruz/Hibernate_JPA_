@@ -1,6 +1,6 @@
 package modelo.basico;
 
-import javax.persistence.Entity;
+import javax.persistence.Entity; 
 import javax.persistence.Id;
 
 @Entity
