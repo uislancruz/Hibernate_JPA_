@@ -1,6 +1,6 @@
 package teste.basico;
 
-import javax.persistence.EntityManager;
+import javax.persistence.EntityManager; 
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
@@ -13,7 +13,7 @@ public class NovoUsuario {
 		EntityManager em = emf.createEntityManager();
 		
 		Usuario novoUsuario = new Usuario("Djalma", "djalma@lanche.com.br");
-		
+		novoUsuario.setId(1L);
 		em.persist(novoUsuario);
 		
 		em.close();
