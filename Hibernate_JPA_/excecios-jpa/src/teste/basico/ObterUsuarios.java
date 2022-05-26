@@ -16,15 +16,11 @@ public class ObterUsuarios {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("excecios-jpa");
 		EntityManager em = emf.createEntityManager();
 		
-//		String jpql = "select u from Usuario u";
-//		TypedQuery<Usuario> query = em.createQuery(jpql, Usuario.class);
-//		query.setMaxResults(5);
+		String jpql = "select u from Usuario u";
+		TypedQuery<Usuario> query = em.createQuery(jpql, Usuario.class);
+		query.setMaxResults(5);
 		
-		//essa parte aqui, faz com que não precise da parte de cima.
-		List<Usuario> usuarios = em
-				.createQuery("select u from Usuario u", Usuario.class)
-				.setMaxResults(5)
-				.getResultList();
+		List<Usuario> usuarios = query.getResultList();
 		
 		for(Usuario usuario: usuarios) {
 			System.out.println("ID" + usuario.getId() + "Email" + usuario.getEmail());
