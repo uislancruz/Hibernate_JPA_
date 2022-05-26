@@ -6,7 +6,7 @@ import javax.persistence.Persistence;
 
 import modelo.basico.Usuario;
 
-public class NovoUsuario {
+public class NovoUsuario { 
 	public static void main(String[] args) {
 		
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("excecios-jpa");
