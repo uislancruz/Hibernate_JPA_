@@ -13,7 +13,7 @@ public class ObterUsuario {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("excecios-jpa");
 		EntityManager em = emf.createEntityManager();
 		
-		Usuario usuario = em.find(Usuario.class, 1);
+		Usuario usuario = em.find(Usuario.class, 1L);
 		System.out.println(usuario.getNome());
 		
 		em.close();
