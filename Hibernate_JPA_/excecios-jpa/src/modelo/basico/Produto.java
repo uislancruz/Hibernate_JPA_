@@ -1,5 +1,9 @@
 package modelo.basico;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 public class Produto {
 	
 	private Long id;
@@ -10,6 +14,8 @@ public class Produto {
 		
 	}
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	public Long getId() {
 		return id;
 	}
