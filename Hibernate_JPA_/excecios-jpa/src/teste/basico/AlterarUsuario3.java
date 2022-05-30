@@ -15,7 +15,10 @@ public class AlterarUsuario3 {
 		em.getTransaction().begin();
 		
 		Usuario usuario = em.find(Usuario.class, 7L);
-		em.detach(usuario);
+		em.detach(usuario); //tirar o objeto do estado gerencia. Para garantir que só será alterado se realmente for solicitado
+		
+		em.merge(usuario);//Faz com que altere. 
+		
 		usuario.setNome("Leonado Leitão");
 		
 		em.getTransaction().commit();
