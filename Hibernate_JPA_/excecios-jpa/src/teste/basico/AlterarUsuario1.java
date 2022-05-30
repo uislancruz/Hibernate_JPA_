@@ -20,6 +20,8 @@ public class AlterarUsuario1 {
 		
 		em.merge(usuario);
 		
+		em.getTransaction().commit();
+		
 		em.close();
 		emf.close();
 		
