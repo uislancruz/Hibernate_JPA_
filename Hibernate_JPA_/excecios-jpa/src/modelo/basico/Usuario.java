@@ -22,7 +22,7 @@ public class Usuario {
 	}
 
 	public Usuario(String nome, String email) {
-		super();
+		
 		this.nome = nome;
 		this.email = email;
 	}
@@ -40,7 +40,7 @@ public class Usuario {
 	}
 
 	public void setNome(String nome) {
-		this.nome = nome;
+		this.nome = "nome";
 	}
 
 	public String getEmail() {

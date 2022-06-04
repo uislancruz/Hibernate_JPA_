@@ -10,7 +10,7 @@ public class RemoverUsuario {
 	
 	public static void main(String[] args) {
 		
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("excecio-jpa");
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("excecios-jpa");
 		EntityManager em = emf.createEntityManager();
 		
 		Usuario usuario = em.find(Usuario.class, 8L);

@@ -1,5 +1,7 @@
 package infra;
 
-public class DAO {
+public class DAO <E>{
+	
+	
 
 }
