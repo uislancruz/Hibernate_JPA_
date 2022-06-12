@@ -40,7 +40,7 @@ public class DAO <E>{
 	public DAO<E> abrirTransacao(){
 		em.getTransaction().begin();
 		return this;
-	}
+	} 
 	
 	public DAO<E> fecharTransacao(){
 		em.getTransaction().commit();
