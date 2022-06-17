@@ -17,20 +17,16 @@ public class Pedido {
 	@Column(nullable = false)
 	private Date data;
 	
-	
-	
-
 	public Pedido() {
+		this(new Date());
 		
 	}
 	
 	
-
 	public Pedido(Date data) {
 		super();
 		this.data = data;
 	}
-
 
 
 	public Long getId() {
