@@ -16,11 +16,13 @@ public class ObterClienteAssento {
 		daoCliente.fechar();
 		
 		DAO<Assento> daoAssento = new DAO<>(Assento.class);
+		@SuppressWarnings("unused")
 		Assento assento = daoAssento.obterPorID(4L);
 		
 		System.out.println(cliente.getAssento().getCliente().getNome());
 		
 		daoAssento.fechar();
+		
 	}
 
 }
