@@ -51,6 +51,18 @@ public class Sobrinho {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+
+
+
+	public List<Tio> getTios() {
+		return tios;
+	}
+
+
+
+	public void setTios(List<Tio> tios) {
+		this.tios = tios;
+	}
 	
 	
 
