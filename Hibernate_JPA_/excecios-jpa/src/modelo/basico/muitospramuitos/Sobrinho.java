@@ -18,8 +18,23 @@ public class Sobrinho {
 	
 	private String nome;
 	
-	@ManyToMany
+	@ManyToMany(mappedBy = "sobrinhos")
 	private List<Tio> tios = new ArrayList<Tio>();
+	
+	
+
+	public Sobrinho() {
+		
+	}
+	
+	
+
+	public Sobrinho(String nome) {
+		super();
+		this.nome = nome;
+	}
+
+
 
 	public Long getId() {
 		return id;
