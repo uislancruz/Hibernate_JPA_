@@ -16,6 +16,9 @@
           <class>modelo.muitospramuitos.Sobrinho</class>
           <class>modelo.muitospramuitos.Filme</class>
           <class>modelo.muitospramuitos.Ator</class>
+         <class>modelo.basico.composicao.Endereco</class>
+         <class>modelo.basico.composicao.Funcionario</class>
+         <class>modelo.basico.composicao.Fornecedor</class>
                 
         <properties>
             <property name="javax.persistence.jdbc.driver"
