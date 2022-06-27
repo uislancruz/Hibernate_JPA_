@@ -17,7 +17,6 @@ public class Funcionario {
 	
 	private Endereco endereco;
 	
-	
 
 	public Funcionario() {
 		
